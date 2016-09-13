@@ -1,8 +1,10 @@
 import React from 'react';
+import Frame from 'react-frame-component';
 
 export default class Match extends React.Component{
   render(){
     return(
+      <Frame  style={{"height" : "600px", "width": "100%"}} initialContent={this.props.initialContent} >
       <div id="content">
         <div className="ads-content">
           <div className="wrapper-content">
@@ -146,6 +148,10 @@ export default class Match extends React.Component{
         </div>
 
       </div>
+      </Frame>
     )
   }
+}
+Match.defaultProps = {
+  initialContent:'<!DOCTYPE html><html><head><link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/> <link rel="stylesheet"  href="styles/styles.css"/></head><body><div></div></body></html>'
 }

@@ -13,6 +13,10 @@ import UpcomingNoContests from './components/UpcomingNoContests/UpcomingNoContes
 import UpcomingMain from './components/UpcomingMain/UpcomingMain.js';
 import UpcomingEnc from './components/UpcomingEnc/UpcomingEnc.js';
 import ScoreBoard from './components/ScoreBoard/ScoreBoard';
+import DraftRoomSc from './components/DraftRoomSc/DraftRoomSc';
+import Match from './components/Match/Match';
+import DraftRoomScPs from './components/DraftRoomScPs/DraftRoomScPs';
+import DraftRoomPp from './components/DraftRoomPp/DraftRoomPp';
 export default (
   <Route path="/"  component={App}>
       <IndexRoute  component={Home}/>
@@ -25,7 +29,12 @@ export default (
         <Route path="scoreboard" component={ScoreBoard}/>
         <Route path="upcomingmain" component={UpcomingMain}/>
         <Route path="upcomingenc" component={UpcomingEnc}/>
-
       </Route>
+      <Route path="draftroomsc" component={DraftRoomSc}/>
+      <Route path="match" component={Match}/>
+      <Route path="draftroomscps" component={DraftRoomScPs}/>
+      <Route path="draftroompp" component={DraftRoomPp}/>
+
+
   </Route>
 );
